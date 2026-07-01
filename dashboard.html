@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Analytics Dashboard - All Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Serif:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="All Food Logo" width="150">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html">For Businesses</a></li>
+                <li><a href="dashboard.html"><strong>View Data Dashboard</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard-intro">
+            <h1>Merchant Analytics Dashboard</h1>
+            <p>Review real-time insights on consumer engagement tracking, retention tracking, and points generation
+                metrics linked via backend platform pipelines.</p>
+        </section>
+
+        <hr>
+
+        <!-- 1. Overview Summary Bar Component -->
+        <section class="summary-metrics">
+            <h2>Performance Snapshot (Current Month)</h2>
+            <div class="metrics-grid">
+                <article class="card">
+                    <h3>Total Customers Synced</h3>
+                    <p class="metric-value">1,245</p>
+                </article>
+
+                <article class="card">
+                    <h3>Total Points/Rewards Issued</h3>
+                    <p class="metric-value">24,850</p>
+                </article>
+
+                <article class="card">
+                    <h3>Total Rewards Redeemed</h3>
+                    <p class="metric-value">842</p>
+                </article>
+
+                <article class="card">
+                    <h3>Estimated Repeat-Visit Rate</h3>
+                    <p class="metric-value">68.4%</p>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- 2. Customer Engagement Interactive Visualization Area -->
+        <section class="chart-container">
+            <h2>Customer Engagement Over Time</h2>
+            <p>Line visualization metric tracking: <strong>New vs. Returning Customers</strong></p>
+
+            <div class="controls-placeholder">
+                <label for="date-range">Filter Timeline Range:</label>
+                <select id="date-range">
+                    <option value="7">Past 7 Days</option>
+                    <option value="30" selected>Past 30 Days</option>
+                    <option value="custom">Custom Date Range Range</option>
+                </select>
+            </div>
+
+            <!-- Visual Layout Chart Component Block Area Mock -->
+            <div id="engagement-chart-graphic"
+                style="border: 2px dashed #2C3E50; padding: 50px; text-align: center; margin-top: 15px;">
+                <p><em>[Interactive Line Chart Graphic Matrix Framework Structural Placeholder Area]</em></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- 3. Rewards Performance Data Processing Grid Table -->
+        <section class="performance-table-container">
+            <h2>Rewards Performance Registry</h2>
+            <table border="1" style="border-collapse: collapse; width: 100%; text-align: left;">
+                <thead>
+                    <tr style="background-color: #2C3E50; color: #FFFFFF;">
+                        <th>Reward Profile Offered</th>
+                        <th>Total Redeemed Frequency</th>
+                        <th>Nearing Expiration Status</th>
+                        <th>Average Time-To-Redeem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Free Fountain Drink or Coffee Accent</td>
+                        <td>412 items</td>
+                        <td>12 instances unredeemed</td>
+                        <td>4.2 days elapsed</td>
+                    </tr>
+                    <tr>
+                        <td>10% Off Entire Entree Cart Order</td>
+                        <td>298 items</td>
+                        <td>45 instances unredeemed</td>
+                        <td>6.8 days elapsed</td>
+                    </tr>
+                    <tr>
+                        <td>Free Dessert on Birthday Milestone</td>
+                        <td>132 items</td>
+                        <td>3 instances unredeemed</td>
+                        <td>2.1 days elapsed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- 4. Deep Analytical Customer Insights Registry Block -->
+        <section class="insights-panel">
+            <h2>Demographic & Activity Insights</h2>
+            <h3>Top Active Consumer Profiles</h3>
+            <ul>
+                <li><strong>User #8401</strong> — 14 total visit actions this tracking cycle ($240 gross spend
+                    valuation)</li>
+                <li><strong>User #2911</strong> — 11 total visit actions this tracking cycle ($195 gross spend
+                    valuation)</li>
+                <li><strong>User #0344</strong> — 9 total visit actions this tracking cycle ($160 gross spend valuation)
+                </li>
+            </ul>
+            <p><strong>Primary Growth Acquisition Channel:</strong> 54% of new audience profiles routed automatically
+                via connected platform cross-promotional tagging fields.</p>
+        </section>
+
+        <hr>
+
+        <!-- 5. Data Pipeline File Export Framework Core -->
+        <section class="export-actions">
+            <h2>Reporting Tools & Export Hub</h2>
+            <p>Download local administrative reference metrics worksheets instantly:</p>
+            <button type="button">Export Consolidated Dataset (.CSV)</button>
+            <button type="button">Generate Executive Briefing Document (.PDF)</button>
+            <p><small>Automated dispatch routines can be assigned via your notification configuration hub.</small></p>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <p><strong>Quick Links:</strong></p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html">For Businesses (Page 2)</a></li>
+                <li><a href="dashboard.html">Dashboard / View Data (Page 3)</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 All Food Inc. | About | Contact | Privacy Policy | Terms of Service</p>
+    </footer>
+
+</body>
+
+</html>

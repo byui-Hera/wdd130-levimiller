@@ -3,13 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up your business - All Food</title>
+    <title>Sign Up Your Business - All Food</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Serif:wght@700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="All Food Logo" width="150">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html"><strong>For Businesses</strong></a></li>
+                <li><a href="dashboard.html">View Data Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Business Hero Section -->
+        <section class="business-hero">
+            <h1>Bring your loyalty program to where the customers already are.</h1>
+            <p>Join All Food and put your business in front of customers actively tracking their points and rewards — with no extra app for you to build or maintain.</p>
+        </section>
+
+        <hr>
+
+        <!-- Merchant Value Proposition -->
+        <section class="value-prop">
+            <h2>Why Partner with All Food?</h2>
+            <ul>
+                <li><strong>Increased visibility</strong> — appear alongside other food brands customers already use.</li>
+                <li><strong>Lower customer drop-off</strong> — customers are reminded of your rewards, not just everyone else's.</li>
+                <li><strong>Simple integration</strong> — connect effortlessly via our robust API, standard POS plugins, or manual uploads.</li>
+                <li><strong>Analytics included</strong> — absolute access to your customized real-time data dashboard performance layout.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Merchant Intake Form Section -->
+        <section class="signup-form-container">
+            <h2>Start Your Business Signup</h2>
+            <form action="#" method="POST">
+                
+                <p>
+                    <label for="biz-name">Business Name:</label>
+                    <input type="text" id="biz-name" name="business_name" required placeholder="e.g. Levi's Diner">
+                </p>
+
+                <p>
+                    <label for="biz-type">Business Type / Category:</label>
+                    <select id="biz-type" name="business_type" required>
+                        <option value="">-- Please Select --</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="cafe">Cafe / Coffee Shop</option>
+                        <option value="food-truck">Food Truck</option>
+                        <option value="other">Other Food/Beverage</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="contact-name">Contact Name:</label>
+                    <input type="text" id="contact-name" name="contact_name" required placeholder="First and Last Name">
+                </p>
+
+                <p>
+                    <label for="contact-email">Contact Email Address:</label>
+                    <input type="email" id="contact-email" name="contact_email" required placeholder="name@business.com">
+                </p>
+
+                <p>
+                    <label for="contact-phone">Contact Phone Number:</label>
+                    <input type="tel" id="contact-phone" name="contact_phone" required placeholder="(555) 000-0000">
+                </p>
+
+                <p>
+                    <label for="existing-program">Do you have an existing loyalty/rewards program?</label>
+                    <select id="existing-program" name="existing_loyalty">
+                        <option value="yes">Yes, we have an active program</option>
+                        <option value="no">No, we need to create one</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="locations-count">Number of Locations:</label>
+                    <input type="number" id="locations-count" name="locations_count" min="1" default="1" required>
+                </p>
+
+                <p>
+                    <label for="referral-source">How did you hear about All Food?</label>
+                    <input type="text" id="referral-source" name="referral_source" placeholder="Social Media, Search Engine, Friend...">
+                </p>
+
+                <p>
+                    <button type="submit">Submit Application</button>
+                </p>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Pricing TBD Section -->
+        <section class="pricing-tier">
+            <h2>Pricing & Plans</h2>
+            <!-- Numbers will not be published until tier configurations are formally finalized -->
+            <p><em>Flexible pricing structures tailored for single locations to enterprise chains are currently being finalized. Contact sales for early-bird structures.</em></p>
+        </section>
+
+        <hr>
+
+        <!-- Merchant Frequently Asked Questions -->
+        <section class="faqs">
+            <h2>Frequently Asked Questions</h2>
+            
+            <h3>How long does setup take?</h3>
+            <p>Standard setup via POS plugins takes less than 15 minutes. Custom API configuration timelines vary based on your system setup.</p>
+
+            <h3>Do I need my own loyalty program already, or can All Food create one?</h3>
+            <p>Both! We can sync cleanly with an active system or establish an entirely fresh one within our dashboard environment.</p>
+
+            <h3>Is there a cost to join?</h3>
+            <p>We feature transparent starter tiers. Detailed monthly billing metrics will be available inside your data account view.</p>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <p><strong>Quick Links:</strong></p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html">For Businesses (Page 2)</a></li>
+                <li><a href="dashboard.html">Dashboard / View Data (Page 3)</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 All Food Inc. | About | Contact | Privacy Policy | Terms of Service</p>
+    </footer>
+
 </body>
 </html>
