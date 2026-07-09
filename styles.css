@@ -1,0 +1,429 @@
+/* ==========================================================================
+   1. GLOBAL RESET & BASE STYLES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Site plan body font */
+    background-color: #FAD8D6;
+    /* Warm accent background tint */
+    color: #2E282A;
+    /* Charcoal dark text */
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Noto Serif', serif;
+    /* Site plan heading font */
+    color: #2E282A;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: rgba(46, 40, 42, 0.15);
+    margin: 3rem 0;
+}
+
+/* ==========================================================================
+   2. REUSABLE COMPONENTS & LAYOUT WRAPPERS
+   ========================================================================== */
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Common Button Styles */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary {
+    background-color: #EF3E36;
+    /* Brand red primary color */
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: #d13029;
+}
+
+.btn-secondary {
+    background-color: #EDB88B;
+    /* Secondary accent peach tone */
+    color: #2E282A;
+    margin-left: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: #dfa374;
+}
+
+/* ==========================================================================
+   3. NAVIGATION HEADER (FLEXBOX)
+   ========================================================================== */
+header {
+    background-color: #FFFFFF;
+    max-width: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(46, 40, 42, 0.05);
+    margin-bottom: 2rem;
+}
+
+header img {
+    display: block;
+    max-height: 50px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2E282A;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover,
+nav ul li a strong {
+    color: #EF3E36;
+    /* Highlights active state */
+}
+
+/* ==========================================================================
+   4. HOMEPAGE SPECIFIC STYLES (index.html)
+   ========================================================================== */
+.hero-section {
+    text-align: center;
+    padding: 4rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #4f4649;
+    margin-bottom: 2.5rem;
+}
+
+/* Grid Layout for Sequential Lists */
+.how-it-works h2,
+.why-choose-us h2,
+.social-proof h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.how-it-works ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.how-it-works li {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 4px solid #EF3E36;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.how-it-works li strong {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #EF3E36;
+}
+
+/* Feature Checklists */
+.why-choose-us ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.why-choose-us ul li {
+    background-color: #FFFFFF;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    position: relative;
+    font-weight: 500;
+}
+
+/* Custom Bullet Check */
+.why-choose-us ul li::before {
+    content: "✓";
+    color: #EF3E36;
+    font-weight: bold;
+    margin-right: 0.75rem;
+}
+
+.social-proof {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   5. SIGNUP FORM SPECIFIC STYLES (signup.html)
+   ========================================================================== */
+.business-hero {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.value-prop ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.value-prop li {
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+/* Semantic Form Layout Formatting */
+.signup-form-container {
+    background-color: #FFFFFF;
+    padding: 3rem;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.signup-form-container form p {
+    margin-bottom: 1.5rem;
+}
+
+.signup-form-container label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.signup-form-container input[type="text"],
+.signup-form-container input[type="email"],
+.signup-form-container input[type="tel"],
+.signup-form-container input[type="number"],
+.signup-form-container select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #EDB88B;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #2E282A;
+}
+
+.signup-form-container input:focus,
+.signup-form-container select:focus {
+    outline: none;
+    border-color: #EF3E36;
+}
+
+.signup-form-container button[type="submit"] {
+    background-color: #EF3E36;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.signup-form-container button[type="submit"]:hover {
+    background-color: #d13029;
+}
+
+.faqs h3 {
+    margin-top: 1.5rem;
+    color: #EF3E36;
+}
+
+/* ==========================================================================
+   6. DASHBOARD SPECIFIC STYLES (dashboard.html)
+   ========================================================================== */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.metrics-grid .card {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.metrics-grid .card h3 {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: #6f6568;
+}
+
+.metrics-grid .metric-value {
+    font-size: 2.2rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    color: #EF3E36;
+    margin-top: 0.5rem;
+}
+
+/* Form Controls & Tables Inside Dashboard */
+.controls-placeholder {
+    margin: 1rem 0;
+}
+
+.controls-placeholder select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #EDB88B;
+}
+
+/* Styled HTML Responsive Table Matrix */
+.performance-table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+table th,
+table td {
+    padding: 1rem;
+    border: 1px solid rgba(46, 40, 42, 0.1) !important;
+}
+
+.insights-panel {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.export-actions button {
+    background-color: #2E282A;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+}
+
+.export-actions button:hover {
+    background-color: #EF3E36;
+}
+
+/* ==========================================================================
+   7. FOOTER STYLES
+   ========================================================================== */
+footer {
+    background-color: #2E282A;
+    color: #FAD8D6;
+    max-width: 100%;
+    margin-top: 5rem;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+footer nav p {
+    margin-bottom: 0.5rem;
+}
+
+footer nav ul {
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+footer nav ul li a {
+    color: #EDB88B;
+}
+
+footer nav ul li a:hover {
+    color: #FFFFFF;
+}
+
+/* ==========================================================================
+   8. MOBILE RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .btn-secondary {
+        margin-left: 0;
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .btn-primary {
+        display: block;
+    }
+
+    .signup-form-container {
+        padding: 1.5rem;
+    }
+}
